@@ -38,7 +38,7 @@ public class PlatformingObject extends GameObject{
 				if(xVelocity<maxVRight/4) xVelocity += runAccel;
 			} else {
 				endtimer+=dt;
-				double k = 1.5;
+				double k = 1.8;
 				if(endtimer < 1*k) {
 					game.blackSpeech = "Well that's checkmate.";
 				} else if(endtimer <2*k) {

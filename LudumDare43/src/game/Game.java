@@ -365,7 +365,7 @@ public class Game {
 
 		g2.setFont(new Font("Candara", Font.BOLD, 30));
 		g2.drawString(kingSpeech, 25+(level>1?levelmarkers[level-2]:0), 700);
-		g2.drawString(blackSpeech, 18600+450, 750-10);
+		g2.drawString(blackSpeech, 18600+450, 750-140);
 		g2.drawString(blackSpeech2, 18600+450, 800-130);
 		g2.drawString(rookSpeech, 18050, 750);
 		try {
