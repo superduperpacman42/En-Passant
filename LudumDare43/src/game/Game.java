@@ -97,7 +97,7 @@ public class Game {
 				case KeyEvent.VK_A: leftPressed = true; break;
 				case KeyEvent.VK_RIGHT:
 				case KeyEvent.VK_D: rightPressed = true; break;
-				case KeyEvent.VK_P: level++; break;
+//				case KeyEvent.VK_P: level++; break;
 				case KeyEvent.VK_SPACE: player.swing();
 				break;
 				}
@@ -246,7 +246,7 @@ public class Game {
 			switch(level) {
 			case 2: kingSpeech = "Nice opening! Now on to the midgame...";break;
 			case 3: kingSpeech = "The endgame draws near...";break;
-			case 4: kingSpeech = "We've got them pinned down, now's your chance to take the queen!";break;
+			case 4: kingSpeech = "We've got them cornered, now's your chance to take the queen!";break;
 			}
 			System.out.println("Level: "+level);
 		}
@@ -365,8 +365,8 @@ public class Game {
 
 		g2.setFont(new Font("Candara", Font.BOLD, 30));
 		g2.drawString(kingSpeech, 25+(level>1?levelmarkers[level-2]:0), 700);
-		g2.drawString(blackSpeech, 18600, 750);
-		g2.drawString(blackSpeech2, 18600, 800);
+		g2.drawString(blackSpeech, 18600+450, 750-10);
+		g2.drawString(blackSpeech2, 18600+450, 800-130);
 		g2.drawString(rookSpeech, 18050, 750);
 		try {
 			for (GameObject sprite:sprites) {

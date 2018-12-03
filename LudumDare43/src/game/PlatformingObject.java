@@ -34,7 +34,7 @@ public class PlatformingObject extends GameObject{
 	@Override
 	public double[] update(Game game, double dt) {
 		if(auto) {
-			if(x < 19050.0-450) {
+			if(x < 19050.0-450+450) {
 				if(xVelocity<maxVRight/4) xVelocity += runAccel;
 			} else {
 				endtimer+=dt;
