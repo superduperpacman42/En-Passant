@@ -147,8 +147,8 @@ public class Game {
 		}
 		sprites.clear();
 		loadLevel(level, true);
-		AudioPlayer music = new AudioPlayer("Capture.wav");
-		music.play();
+//		AudioPlayer music = new AudioPlayer("Capture.wav");
+//		music.play();
 		elapsedTime = 0;
 		reset = false;
 	}

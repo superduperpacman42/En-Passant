@@ -12,7 +12,7 @@ public class Player extends PlatformingObject {
 	Game game;
 	Sprite target;
 	boolean ul, ur, dl, dr;
-	AudioPlayer capture = new AudioPlayer("Capture.wav");
+//	AudioPlayer capture = new AudioPlayer("Capture.wav");
 
 
 	public Player(int x, int y, Game g) {
@@ -130,7 +130,7 @@ public class Player extends PlatformingObject {
 							setAnim(Animations.STABUP);
 							x = x0+(right?150:-150);
 							y = y0-150;
-							capture.play();
+//							capture.play();
 							return;
 						}
 					}
@@ -148,7 +148,7 @@ public class Player extends PlatformingObject {
 							setAnim(Animations.STABDOWN);
 							x = x0+(right?150:-150);
 							y = y0+150;
-							capture.play();
+//							capture.play();
 							return;
 						}
 					}
